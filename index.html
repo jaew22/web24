@@ -7,30 +7,81 @@
     <title>프로젝트: 반응형 웹 페이지 제작</title>
 </head>
 <body>
-    <!-- Header: 메뉴 -->
+     <!-- Header: 메뉴 -->
     <div id="header">
-        <label for="toggle">MENU</label>
-        <input type="checkbox" id="toggle">
-        <ul id="nav">
-            <li><a href="#"> 우리독도 </a></li>
-            <li><a href="#"> 자연관 </a></li>
-            <li><a href="#"> 역사관 </a></li>
-        </ul>
+      <label for="toggle">MENU</label>
+      <input type="checkbox" id="toggle" />
+      <ul id="nav">
+        <li><a href="#" data-content="contents1">우리독도</a></li>
+        <li><a href="#" data-content="contents2">자연관</a></li>
+        <li><a href="#" data-content="contents3">역사관</a></li>
+      </ul>
     </div>
-    <!-- Contents: 본문 -->    
-    <div id="contents">
-        <h2>태고의 신비를 간직하고 있는 독도의 자연을 소개해 드립니다.</h2>
-        <h2>대한민국의 아름다운 섬, 독도</h2>
-        <img src="dokdo1.jpeg" alt="독도 이미지 1">    
-        <h3>기온과 강수량</h3>
-        <p>독도의 기후는 난류의 영향을 많이 받는 전형적인 해양성 기후로 연평균기온이 12.4℃, 가장 추운 1월 평균기온이 1℃, 가장 더운 8월 평균기온이 23℃로 비교적 온난한 편이다. 바람이 많은 독도의 연평균 풍속은 4.3m/s로 남서풍이 우세한 반면 겨울에는 북동풍이 우세를 보이고 있다.</p>
-        <p>독도는 안개가 잦고 연중 흐린 날이 160일 이상이며 강우일수는 150일 정도로 연중 85%가 흐리거나 눈˙비가 내려 비교적 습한 지역이다. 연평균 강수량은 1,383.4mm, 겨울철 강수는 대부분 적설 형태이며 폭설이 많이 내리는 것이 특징이다.</p>
-        <img src="dokdo2.jpeg" alt="독도 이미지 2">    
-        <br>
+
+    <!-- Contents: 본문1: 우리독도 -->
+    <div id="contents1" class="content">
+      <h2>태고의 신비를 간직하고 있는 독도의 자연을 소개해 드립니다.</h2>
+      <h2>대한민국의 아름다운 섬, 독도</h2>
+      <img src="dokdo1.jpeg" />
+      <h3>기온과 강수량</h3>
+      <p>
+        독도의 기후는 난류의 영향을 많이 받는 전형적인 해양성 기후로
+        연평균기온이 12.4℃, 가장 추운 1월 평균기온이 1℃, 가장 더운 8월
+        평균기온이 23℃로 비교적 온난한 편이다. 바람이 많은 독도의 연평균 풍속은
+        4.3m/s로 남서풍이 우세한 반면 겨울에는 북동풍이 우세를 보이고 있다.
+      </p>
+      <p>
+        독도는 안개가 잦고 연중 흐린 날이 160일 이상이며 강우일수는 150일 정도로
+        연중 85%가 흐리거나 눈˙비가 내려 비교적 습한지역이다. 연평균강수량은
+        1,383.4mm, 겨울철 강수는 대부분 적설형태이며 폭설이 많이 내리는 것이
+        특징이다.
+      </p>
+      <img src="dokdo2.jpeg" />
+      <br />
     </div>
+
+    <!-- Contents: 본문2: 자연관 -->
+    <div id="contents2" class="content" style="display: none">
+      <h2>자연관</h2>
+      <h2>대한민국의 아름다운 섬, 독도</h2>
+	  <img src="dokdo1.jpeg" />
+      <h3>태고의 신비를 간직한 독도의 자연환경</h3>
+      <p>독도의 자연은 태고의 신비를 간직하고 있다. 독도의 지형은 화산활동으로 형성된 화산암과 퇴적암들로 이루어져 있으며, 이는 독도의 독특한 지질학적 특성을 잘 보여준다.</p>
+	  <p>독도의 해양 샌태계는 매우 풍부하다. 맑고 투명한 바다에는 명태, 오징어, 미역 등 다양한 해양 생물이 서식하고 있어 어족자원이 풍부하다. 독도는 또한 괭이갈매기와 같은 바다새들의 서식지로, 자연 그대로의 샏ㅇ태계를 유지하고 있다.</p>
+      <p>독도의 절벽과 바위들은 자연의 조각품과도 같으며, 그 형성 과정은 독특한 자연경관을 만ㄷ르어낸다. 이러한 환경은 생태 관광지로서의 독도의 가치를 높여준다. 태고의 신비와 자연의 아름다움을 간직한 독도;는 우리 모두가 이해하고 보존해야 할 소중한 자산이다.</p>
+	  <img src="dokdo2.jpeg" />
+      <br />
+    </div>
+
+    <!-- Contents: 본문3: 역사관 -->
+    <div id="contents3" class="content" style="display: none">
+      <h2>역사관</h2>
+      <h2>대한민국의 아름다운 섬, 독도</h2>
+	  <img src="dokdo1.jpeg" />
+      <h3>독도의 과거와 현재</h3>
+      <p>독도의 역사는 다양한 역사 문헌을 통해 전해져 내려오며, 오랜 세월 동안 우리 조상들이 이 섬을 생활의 일부로 삼아온 흔적이 남아있다. 512년 신라의 이사부 장군이 울릉도와 독도를 신라 영토로 편입한 이후, 독도는 한국의 영토로 인식되었다. 조선시대 세종실록지리지에서는 독도를 우산국으로 명시하여, 이를 통해 독도가 오랜 세월 동안 한국의 영토였음을 알 수 있다.</p>
+      <p>1900년 대한제국 칙령 제41호를 통해 독도는 울릉도의 부속 섬으로 규정되었으며, 현대에 들어와 대한민국 정부는 독도에 경찰을 주둔시키고 다양한 보호 활동을 통해 독도의 주권을 확고히 하고 있다. 독도는 한국의 역사와 자부심을 상징하는 중요한 섬으로, 그 역사적 가치를 이해하고 후손들에게 물려주는 것은 우리 모두의 책임이다.</p>
+	  <img src="dokdo2.jpeg" />
+      <br />
+    </div>
+
     <!-- Footer: 저작권정보 -->
     <div id="footer">
-        Copyright by 손에 잡히는 프로그래밍(웹) / Gachon University. All rights reserved.
+      Copyright by 손에 잡히는 프로그래밍(웹) 202134000 장재원 / Gachon University. All rights
+      reserved.
     </div>
-</body>
+
+    <script>
+      document.querySelectorAll("#nav a").forEach((link) => {
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+          document
+            .querySelectorAll(".content")
+            .forEach((content) => (content.style.display = "none"));
+          const contentId = this.getAttribute("data-content");
+          document.getElementById(contentId).style.display = "block";
+        });
+      });
+    </script>
+  </body>
 </html>
